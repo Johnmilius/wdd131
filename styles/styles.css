@@ -1,3 +1,23 @@
-header{
-    text-align: center;
+header {
+  margin: 7%;
+  text-align: center;
+  border: black 5px solid;
+  background-color: lightgray;
+}
+
+nav {
+  display: flex;
+  margin: 7%;
+}
+nav a {
+  border: black 5px solid;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+}
+
+nav a:hover {
+  background-color: rgb(80, 79, 79);
+  color: white;
 }
