@@ -1,0 +1,44 @@
+body {
+  margin: 7%;
+}
+
+header p {
+  color: #1575bb;
+  margin: 0px;
+}
+
+header h1{
+    font-weight: 600;
+}
+
+header {
+  text-align: center;
+  border-bottom: solid lightgray 1px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+main {
+    line-height: 1.5;
+}
+main div{
+    margin-top: 40px;
+}
+
+li {
+    padding: 5px;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+footer {
+    margin: 40px;
+}
+
+footer img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
