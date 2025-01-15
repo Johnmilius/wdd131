@@ -42,3 +42,12 @@ footer img {
   display: block;
   margin: 0 auto;
 }
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark header p{
+  color:#4F9ACF;
+}
