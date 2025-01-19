@@ -48,6 +48,11 @@ footer img {
   color: white;
 }
 
-.dark header p{
-  color:#4F9ACF;
+.dark header p {
+  color: #4f9acf;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
 }
