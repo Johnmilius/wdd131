@@ -4,15 +4,15 @@ function changeTheme() {
 // The current value is conveniently found in themeSelector.value!
     const selectedTheme = themeSelector.value;
 
-    if (themeSelector === 'dark'){
+    if (selectedTheme === 'dark'){
         document.body.classList.add('dark');
         const logo = document.querySelector('footer img');
-        logo.src = "byui-logo-black.png";
+        logo.src = "byui-logo_black.png";
     }
     else {
         document.body.classList.remove('dark');
         const logo = document.querySelector('footer img');
-        logo.src = "byui-logo-blue.webp"; 
+        logo.src = "byui-logo_blue.webp"; 
     }
 
 
