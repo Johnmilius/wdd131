@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto";
+}
+
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: grey solid 2.5px;   
+  background-color: lightblue;
+  padding: 1rem;
+}
+
+main section p, main section h2, header h1, footer{
+    padding: .25rem;
+}
+
+main section {
+    padding: 1rem;
+    background-color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+
+@media (min-width: 500px){
+    header {
+    background-color: black;
+    color: white;
+    }
+
+     main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+}
