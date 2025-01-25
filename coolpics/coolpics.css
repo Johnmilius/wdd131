@@ -66,7 +66,6 @@ header h1 {
   background-color: var(--accent-color);
 }
 
-a:link,
 a:visited {
   color: var(--accent-color);
 }
