@@ -3,6 +3,7 @@
 body {
   margin: 0;
   background-color: var(--primary-color);
+  font-size: 1.2em;
 }
 
 :root {
@@ -120,5 +121,6 @@ footer p {
     grid-template-columns: repeat(5, 1fr);
     max-width: 1150px;
     margin: 0 auto;
+    padding-bottom: .5rem;
   }
 }
