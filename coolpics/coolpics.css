@@ -4,10 +4,7 @@ body {
   margin: 0;
   background-color: var(--primary-color);
 }
-a:link,
-a:visited {
-  color: var(--accent-color);
-}
+
 :root {
   --primary-color: #52489c;
   --secondary-color: #59c3c3;
@@ -32,7 +29,7 @@ img {
   width: 250px;
   object-fit: cover;
   border: white solid 0.5rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -66,6 +63,11 @@ header h1 {
 
 .dropdown-btn:hover {
   background-color: var(--accent-color);
+}
+
+a:link,
+a:visited {
+  color: var(--accent-color);
 }
 
 main {
