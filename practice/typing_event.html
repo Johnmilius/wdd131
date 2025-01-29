@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Event</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Type something here...">
+    <p id="message"></p>
+
+    <script>
+        // Get the input element and message paragraph
+        let inputField = document.getElementById("userInput");
+        let message = document.getElementById("message");
+
+        // Add an event listener for the 'input' event
+        inputField.addEventListener("input", function() {
+            message.textContent = "You're typing!"; // Show the message
+        });
+
+        inputField.addEventListener("blur", function() {
+            message.textContent = "";
+        })
+
+        function emptyContent() {
+            message.textContent = "";
+        }
+
+        inputField.addEventListener("blur", emptyContent);
+    </script>
+</body>
+</html>

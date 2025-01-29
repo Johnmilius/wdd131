@@ -1,0 +1,31 @@
+/* Updated body styles for smooth transition */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 1s ease; /* This will smoothly transition the background color */
+    background-color: white; /* Initial color */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
