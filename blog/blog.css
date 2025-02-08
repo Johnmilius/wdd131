@@ -4,14 +4,33 @@
 :root {
   --font-family-header: "Noto Serif", serif;
   --font-family-p: "Figtree", sans-serif;
-  --primary-color: black;
-  --secondary-color: darkred;
-  --font-color: rgb(59, 32, 14);
+  --primary-color: rgb(197, 118, 0);
+  --font-color-dark: rgb(59, 32, 14);
+  --font-color-light: darkred;
+}
+
+.skiptocontent {
+   text-align: left;
+   max-width: fit-content;
+   padding: .5rem;
+   border-radius: 1rem;
+}
+
+.skiptocontent a{
+  position: absolute;
+  top: -40px; 
+  background-color: var(--font-color-light);
+  color: white;
+  text-decoration: none;
+}
+
+.skiptocontent a:focus {
+	top: 0;
 }
 
 header {
   font-family: var(--font-family-header);
-  color: var(--font-color);
+  color: var(--font-color-dark);
   text-align: center;
 }
 
@@ -26,7 +45,7 @@ header {
 } 
 
 .navbar a {
-  color: var(--secondary-color);
+  color: var(--font-color-light);
   text-decoration: none;
 }
 
@@ -58,4 +77,26 @@ main {
 
 #book-description-box h2{
     margin: 0;
+    font-family: var(--font-family-header);
+    color: var(--font-color-light);
+    margin-bottom: .75rem;
+
+}
+
+#book-description-box img{
+  display: block;          
+  margin-left: auto;       
+  margin-right: auto;      
+  max-width: 100%;         
+  height: auto;  
+}
+
+#book-description-box p{
+  font-family: var(--font-family-p);
+}
+
+#sort-box{
+  border: 1px var(--primary-color) solid;
+  color: var(--font-color-dark);
+  font-family: var(--font-family-p);
 }
