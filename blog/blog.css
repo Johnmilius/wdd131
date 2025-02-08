@@ -96,7 +96,7 @@ main {
 }
 .book-description-box a{
   color: var(--font-color-light);
-  text-decoration: none;
+  text-decoration: underline;
 }
 .book-description-box a:hover{
   color: rgb(230, 195, 0);
