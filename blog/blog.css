@@ -36,10 +36,7 @@ header {
 
 .navbar {
   display: grid;
-  /* gap: 2rem; */
   grid-template-columns: repeat(3, 100px);
-  grid-template-rows: 1fr;
-
   justify-content: flex-end;
   padding: 0.75rem 4rem 0.75rem 0.75rem;
   border-top: var(--primary-color) 2px solid;
@@ -96,6 +93,13 @@ main {
 
 .book-description-box p {
   font-family: var(--font-family-p);
+}
+.book-description-box a{
+  color: var(--font-color-light);
+  text-decoration: none;
+}
+.book-description-box a:hover{
+  color: rgb(230, 195, 0);
 }
 
 .sort-box {
