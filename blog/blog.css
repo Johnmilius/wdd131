@@ -67,6 +67,10 @@ main {
   padding-right: 0.75rem;
 }
 
+.filters p:nth-child(1) {
+  font-size: 20px;
+}
+
 .filters p {
   font-family: var(--font-family-p);
   margin: 0.5rem 0 0.5rem 0.5rem;
@@ -107,7 +111,7 @@ main {
   color: var(--font-color-dark);
   font-family: var(--font-family-p);
   grid-column: 3/4;
-  grid-row: 1/3;
+  grid-row: 1 / -1;
   max-width: fit-content;
   padding: 0 1rem 1rem 1rem;
 }
