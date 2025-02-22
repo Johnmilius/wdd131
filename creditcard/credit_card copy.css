@@ -1,0 +1,58 @@
+#creditCardForm{
+    margin-left: 50px;
+    margin-top: 50px;
+
+    /* max-width: 400px;
+    max-height: 350px; */
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: .33fr 2fr .33fr .33fr;
+}
+
+#frontCard{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+
+    background-color: #e4e4e7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 66% 34%;
+    grid-template-rows: 40% 30% 30%;
+    
+}
+
+#frontCard img{
+}
+
+#creditCardBox{
+    grid-area: 2 / 1 / 3 / 3;
+    max-width: 100%;
+}
+
+#cardHolderBox{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#ExpirationBox{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#backCard{
+   grid-column: 2 / 4;
+   grid-row: 2 / 4;
+   background-color: #a7a7b3;
+   z-index: -1;
+   border-radius: 5px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
