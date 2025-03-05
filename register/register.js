@@ -92,17 +92,12 @@ function submitForm(event) {
     // let submittedHTML = document.createElement("div");
     // submittedHTML.innerHTML = successTemplate(info);
     let form = document.querySelector('form');
-    form.classList.add('hide');
-
     form.insertAdjacentHTML("beforebegin", successTemplate(info));
 
     // hiding the form
-
-    
+    form.classList.add('hide');
 
 }
 
 const submitButton = document.querySelector('#submitButton');
 submitButton.addEventListener('click', submitForm);
-
-
