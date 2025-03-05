@@ -52,7 +52,7 @@ addButton.addEventListener('click', function(){
 
 
 function successTemplate(info){
-    return `<p>Thank you ${info.adultName} for registering. You have registered ${info.numParticipants} participants and owe $${info.totalCost} in Fees.</p>`
+    return `<div><p>Thank you ${info.adultName} for registering. You have registered ${info.numParticipants} participants and owe $${info.totalCost} in Fees.</p> </div>`
 }
 
 function totalFees() {
@@ -89,13 +89,16 @@ function submitForm(event) {
         numParticipants: numParticipants
     }
 
-    let submittedHTML = successTemplate(info);
+    // let submittedHTML = document.createElement("div");
+    // submittedHTML.innerHTML = successTemplate(info);
+    let form = document.querySelector('form');
+    form.classList.add('hide');
+
+    form.insertAdjacentHTML("beforebegin", successTemplate(info));
 
     // hiding the form
-    let form = document.querySelector('form');
-    form.classList.add('.hide');
 
-    form.insertAdjacentHTML(submittedHTML);
+    
 
 }
 
