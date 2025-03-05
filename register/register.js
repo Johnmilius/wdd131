@@ -1,5 +1,5 @@
 // register.js
-import {participantTemplate, successTemplate, totalFees, submitForm} from "./templates.js";
+import {participantTemplate, submitForm} from "./templates.js";
 
 const addButton = document.querySelector('#add');
 const participantContainer = document.querySelector('.participants');

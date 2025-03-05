@@ -42,12 +42,12 @@ export function participantTemplate(count){
 }
 
 //Function to create a String that displayes the success after submitting the form
-export function successTemplate(info){
+function successTemplate(info){
     return `<div><p>Thank you ${info.adultName} for registering. You have registered ${info.numParticipants} participants and owe $${info.totalCost} in Fees.</p> </div>`
 }
 
 //Function to calculate all the fees from every participent
-export function totalFees() {
+function totalFees() {
     // the selector below lets us grab any element that has an id that begins with "fee"
     let feeElements = document.querySelectorAll("[id^=fee]");
     // console.log(feeElements);
