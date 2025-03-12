@@ -8,7 +8,7 @@ img {
 h1,
 h2 {
   font-family: "Amatic SC";
-  color: rgb(0, 160, 253);
+  color: #005999;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -74,7 +74,7 @@ footer {
 
 #footer_recipeIconLink {
   text-decoration: none;
-  color: rgb(0, 160, 253);
+  color: #005999;
   font-size: 0.6em;
 }
 
