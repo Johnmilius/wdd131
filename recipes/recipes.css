@@ -18,6 +18,7 @@ body {
   border: lightgrey 2px solid;
   border-radius: 10px;
   width: 350px;
+  margin: 0 auto;
 }
 
 header {
@@ -48,6 +49,7 @@ header img {
 #header_searchBar input[type="text"] {
   width: 100%;
   padding: 8px;
+  border: none;
   border-right: 1px solid #ccc;
 }
 #header_searchBar button {
@@ -106,12 +108,21 @@ footer {
 #main_recipeName h2 {
   margin: 0px;
 }
+#main_recipeDescription{
+  display: none;
+}
 #main_recipeRating {
 }
 
 /* Media Responsivness */
 
 @media (min-width: 600px) {
+
+  #main_recipeDescription{
+    display: inline-block;
+  }
+
+
   body {
     margin: 0 auto;
     box-sizing: border-box;
@@ -120,11 +131,16 @@ footer {
   }
   #main_recipeBox {
     display: flex;
-
     max-width: 100%;
   }
   #main_recipeImg {
+    flex: 0 0 350px;
   }
+  #main_recipeInfo{
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+
 
   footer {
     padding-left: 1rem;
