@@ -1,6 +1,10 @@
 /* recipes.css */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
+img {
+  max-width: 100%;
+}
+
 h1,
 h2 {
   font-family: "Amatic SC";
@@ -74,10 +78,9 @@ footer {
 
 /* Main Styles */
 
-#main_container{
-    display: flex;
+#main_container {
+  display: flex;
 }
-
 #main_recipeBox {
   border: 1px black solid;
   border-radius: 10px;
@@ -106,26 +109,37 @@ footer {
 #main_recipeRating {
 }
 
-
 /* Media Responsivness */
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
+  body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+  }
+  #main_recipeBox {
+    display: flex;
 
-    body{
-        box-sizing: border-box;
-        width: 100%;
-        margin: 5rem;
-    }
-    #main_recipeBox{
-        display: flex;
-        max-width: 100%;
-    }
-    #main_recipeImg{ 
-    }
+    max-width: 100%;
+  }
+  #main_recipeImg {
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #footer_recipeIconLink {
+    margin-right: auto;
+    align-self: center;
+  }
 }
 
 @media (min-width: 960px) {
-    body {
-        max-width: 960px;
-    }
+  body {
+    max-width: 960px;
+  }
 }
