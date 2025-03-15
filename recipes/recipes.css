@@ -112,6 +112,13 @@ footer {
   display: none;
 }
 #main_recipeRating {
+}   
+
+/* After adding Js */
+
+#main_container{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Media Responsivness */
@@ -121,7 +128,6 @@ footer {
   #main_recipeDescription{
     display: inline-block;
   }
-
 
   body {
     margin: 0 auto;
