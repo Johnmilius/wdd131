@@ -108,15 +108,15 @@ footer {
 #main_recipeName h2 {
   margin: 0px;
 }
-#main_recipeDescription{
+#main_recipeDescription {
   display: none;
 }
 #main_recipeRating {
-}   
+}
 
 /* After adding Js */
 
-#main_container{
+#main_container {
   display: flex;
   flex-direction: column;
 }
@@ -124,8 +124,7 @@ footer {
 /* Media Responsivness */
 
 @media (min-width: 600px) {
-
-  #main_recipeDescription{
+  #main_recipeDescription {
     display: inline-block;
   }
 
@@ -142,11 +141,10 @@ footer {
   #main_recipeImg {
     flex: 0 0 350px;
   }
-  #main_recipeInfo{
+  #main_recipeInfo {
     flex: 1 1 auto;
     padding: 1rem;
   }
-
 
   footer {
     padding-left: 1rem;

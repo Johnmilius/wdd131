@@ -4,11 +4,11 @@ import {recipes} from './recipes.mjs';
 function random(num){ //return a number between 0 and num
    return Math.floor(Math.random() * num);
 }
+
 function getRandomListEntry(list){
     const randomItem = list[(random(list.length))];
     return randomItem;
 }
-console.log(getRandomListEntry(recipes));
 
 function recipeTemplate(recipe){
     return `<section id="main_recipeBox">
@@ -74,9 +74,49 @@ function ratingTemplate(rating) {
 	// return the html string
 	return html
 }
-console.log(ratingTemplate(2));
 
-const mainContainer = document.getElementById('main_container');
-let appendHTML = recipeTemplate(getRandomListEntry(recipes));
+function filterRecipes(query, list){
 
-mainContainer.innerHTML += appendHTML;
+    function searchCallback(item){
+        return (  
+        item.name.toLowerCase().includes(query) ||
+        item.description.toLowerCase().includes(query.toLowerCase()) ||
+        item.tags.find((tag) => tag.toLowerCase().includes(query.toLowerCase())) ||
+        item.recipeIngredient.find((ingredient) => ingredient.toLowerCase().includes(query.toLowerCase()))
+        );
+    }
+
+    let filteredRecipesList = list.filter(searchCallback);
+
+    let sortedFilteredList = filteredRecipesList.sort((a, b) => {
+        if (a.name < b.name) {
+            return -1;
+          } else if (a.name > b.name) {
+            return 1;
+          }
+        return 0;
+    })
+
+    return sortedFilteredList;
+}
+
+function searchHandler(){
+    const mainContainer = document.getElementById('main_container');
+    let searchbarTEXT = document.querySelector("#header_searchBar input").value;
+
+    searchbarTEXT = searchbarTEXT.toLowerCase();
+    let filteredRecipes = filterRecipes(searchbarTEXT, recipes);
+
+    let newSearchedHTML = filteredRecipes.map(recipeTemplate).join('');    
+    mainContainer.innerHTML = newSearchedHTML;
+}
+
+function init() {  
+    const mainContainer = document.getElementById('main_container');
+    let appendHTML = recipeTemplate(getRandomListEntry(recipes));
+    mainContainer.innerHTML += appendHTML;
+}
+
+// Wait for the DOM to fully load before calling init
+document.addEventListener('DOMContentLoaded', init);
+document.querySelector("#header_searchBar button").addEventListener('click', searchHandler);
