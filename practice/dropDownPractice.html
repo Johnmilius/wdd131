@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="dropDownPractice.css">
+</head>
+
+<body>
+    <h1>Best Places To Surf!</h1>
+
+    <button class="accordion">Pipeline, Oahu, Hawaii</button>
+    <div class="panel">
+        <p>Location: North Shore, Oahu</p>
+        <p>Wave Type: Reef break</p>
+        <p> Pipeline is one of the most famous surf spots in the world, located on the North Shore of Oahu, Hawaii. The
+            wave here is known for its powerful barrels that form over a shallow reef, creating hollow waves that are
+            perfect for experienced surfers looking for a challenge. The wave can break anywhere from 6 feet to 20+ feet
+            during the winter months, making it a top destination for big wave surfers. It’s often considered a proving
+            ground for professional surfers, hosting the annual Billabong Pipeline Masters event as part of the World
+            Surf League championship tour.</p>
+    </div>
+
+    <button class="accordion"> Jeffrey's Bay, South Africa</button>
+    <div class="panel">
+        <p>Location: Eastern Cape, South Africa</p>
+
+        <p>Wave Type: Point break</p>
+        <p>
+            Jeffrey’s Bay is globally recognized for its long, fast, and incredibly smooth right-hand point breaks. It’s
+            a top destination for surfers seeking consistent, world-class waves. The bay’s distinctive geography creates
+            one of the longest rides in the world, with waves sometimes stretching over 300 meters. The spot is known
+            for being particularly favorable in the Southern Hemisphere’s winter months, with waves often reaching
+            overhead size. The area also hosts the World Surf League's J-Bay Open, attracting top-tier surfers and fans
+            from all over the world.</p>
+    </div>
+
+    <button class="accordion">Teahupo'o, Tahiti</button>
+    <div class="panel">
+        <p>Location: Island of Tahiti, French Polynesia </p>
+
+        <p>Wave Type: Reef break</p>
+
+        <p>
+            Teahupo’o is infamous for having some of the thickest and heaviest waves on the planet. The reef break here
+            creates powerful, fast barrels that can be daunting even for the most experienced surfers. What makes
+            Teahupo’o unique is the way the wave breaks—closer to the shore than most other spots, over a shallow reef,
+            creating massive, hollow tubes. It’s renowned for its extreme conditions, which makes it a mecca for
+            big-wave surfers seeking a thrilling, world-class challenge. The spot is also known for its stunning beauty,
+            with turquoise waters and dramatic tropical scenery.
+        </p>
+    </div>
+
+    <script>
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

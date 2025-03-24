@@ -10,9 +10,12 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: #005999; /* medium dark blue */
   --secondary-color: #282828; /* almost black */
-  --accent1-color: linear-gradient(to right, #8A2BE2, #00FFFF, #8A2BE2); /* violet, cyan, violet holographic gradient */
-  --accent2-color: #333333; /* Darker Gray (Dividers) */
+  --accent1-color: #A3C2E0;
+  --accent2-color: #E0E0E0; /* Darker Gray (Dividers) */
   --text-color: #E0E0E0; /* Light Gray Text */
+  --back-ground-color: #E0F2FE;
+  /* #2364d2 
+     hsl(212, 89%, 65%) DropDownPractice #a5e8fef2 */
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Montserrat', sans-serif;
@@ -95,9 +98,11 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: var(--accent2-color)
 }
 .secondary {
   background-color: var(--secondary-color);
+  color: var(--accent2-color)
 }
 .accent1 {
   background-color: var(--accent1-color);
