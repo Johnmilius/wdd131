@@ -2,29 +2,32 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a42212;
-  --accent2-color: white;
+  --primary-color: #005999; /* medium dark blue */
+  --secondary-color: #282828; /* almost black */
+  --accent1-color: linear-gradient(to right, #8A2BE2, #00FFFF, #8A2BE2); /* violet, cyan, violet holographic gradient */
+  --accent2-color: #333333; /* Darker Gray (Dividers) */
+  --text-color: #E0E0E0; /* Light Gray Text */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
+  --paragraph-font: 'Lato', Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
     --primary-color
   ); /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: var(
-    --primary-color
-  ); /* paragraph text on a white background */
+  --paragraph-color-on-white: var(--primary-color); /* paragraph text  on a white background */
+
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--primary-color);
+  --nav-link-color: var(--text-color);
   --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
@@ -63,7 +66,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  background-color: var(--secondary-color);
 }
 header > h1,
 header > h2 {
@@ -74,6 +77,7 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
+  font-weight: 300;
 }
 .colors {
   width: 100%;

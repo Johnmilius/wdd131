@@ -1,20 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+p, a {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
 header {
-  margin: 7%;
+  margin: 2rem;
   text-align: center;
   border: black 5px solid;
   background-color: lightgray;
 }
 
+#main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  margin: 2rem;
+}
+#main_grid > div{
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
-  margin: 7%;
+  margin: 2rem;
+  flex-flow: column-reverse wrap;
+  width:fit-content;
 }
 nav a {
   border: black 5px solid;
+  border-radius: 10px;
+  margin: 0.25rem;
   padding: 20px;
   text-decoration: none;
   color: black;
   background-color: lightgray;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
