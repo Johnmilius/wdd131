@@ -1,0 +1,70 @@
+/* index.css */
+
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  /* fonts */
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Lato", Helvetica, sans-serif;
+}
+
+/* Body Styles */
+body{
+    margin: 0;
+}
+#header_main_container {
+    margin: 2rem;
+}
+
+/* Font Styles */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+p,
+a {
+  font-family: var(--paragraph-font);
+}
+
+/* Header Styles */
+
+header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#header_logoIMG {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+#header_childPageLink {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+#header_childPageLink a {
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    gap: 1rem;
+    padding: .5rem 0rem 0rem 1rem; 
+}
+
+/* Home Page Main Styles */
+main{
+    height: 100px;
+}
