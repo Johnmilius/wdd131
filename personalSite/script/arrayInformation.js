@@ -90,47 +90,126 @@ const heightModifiers = {
         pushups: { beginner: 32, novice: 46, intermediate: 69, advanced: 92, elite: 120 },
         pullups: { beginner: 9, novice: 13, intermediate: 18, advanced: 23, elite: 28 }
       },
-    '200lbs': {
-        squat: { beginner: 140, novice: 190, intermediate: 250, advanced: 320, elite: 390 },
-        benchPress: { beginner: 135, novice: 185, intermediate: 240, advanced: 305, elite: 375 },
-        deadlift: { beginner: 170, novice: 235, intermediate: 310, advanced: 390, elite: 470 },
-        pushups: { beginner: 30, novice: 44, intermediate: 65, advanced: 87, elite: 115 },
-        pullups: { beginner: 8, novice: 12, intermediate: 17, advanced: 22, elite: 27 }
+      '200lbs': {
+          squat: { beginner: 140, novice: 190, intermediate: 250, advanced: 320, elite: 390 },
+          benchPress: { beginner: 135, novice: 185, intermediate: 240, advanced: 305, elite: 375 },
+          deadlift: { beginner: 170, novice: 235, intermediate: 310, advanced: 390, elite: 470 },
+          pushups: { beginner: 30, novice: 44, intermediate: 65, advanced: 87, elite: 115 },
+          pullups: { beginner: 8, novice: 12, intermediate: 17, advanced: 22, elite: 27 }
+      },
+      '210lbs': {
+          squat: { beginner: 150, novice: 200, intermediate: 265, advanced: 340, elite: 410 },
+          benchPress: { beginner: 140, novice: 190, intermediate: 245, advanced: 315, elite: 385 },
+          deadlift: { beginner: 175, novice: 245, intermediate: 320, advanced: 400, elite: 480 },
+          pushups: { beginner: 28, novice: 42, intermediate: 62, advanced: 84, elite: 110 },
+          pullups: { beginner: 7, novice: 11, intermediate: 16, advanced: 21, elite: 26 }
+      },
+      '220lbs': {
+          squat: { beginner: 160, novice: 215, intermediate: 280, advanced: 355, elite: 425 },
+          benchPress: { beginner: 145, novice: 200, intermediate: 255, advanced: 325, elite: 395 },
+          deadlift: { beginner: 185, novice: 255, intermediate: 335, advanced: 415, elite: 495 },
+          pushups: { beginner: 26, novice: 40, intermediate: 60, advanced: 80, elite: 105 },
+          pullups: { beginner: 6, novice: 10, intermediate: 15, advanced: 20, elite: 25 }
+      },
+      '230lbs': {
+          squat: { beginner: 170, novice: 230, intermediate: 295, advanced: 375, elite: 445 },
+          benchPress: { beginner: 150, novice: 205, intermediate: 260, advanced: 335, elite: 405 },
+          deadlift: { beginner: 195, novice: 270, intermediate: 350, advanced: 430, elite: 510 },
+          pushups: { beginner: 24, novice: 38, intermediate: 58, advanced: 77, elite: 100 },
+          pullups: { beginner: 6, novice: 9, intermediate: 14, advanced: 19, elite: 24 }
+      },
+      '240lbs': {
+          squat: { beginner: 180, novice: 245, intermediate: 310, advanced: 390, elite: 460 },
+          benchPress: { beginner: 155, novice: 215, intermediate: 270, advanced: 345, elite: 415 },
+          deadlift: { beginner: 205, novice: 280, intermediate: 360, advanced: 445, elite: 525 },
+          pushups: { beginner: 22, novice: 36, intermediate: 55, advanced: 74, elite: 95 },
+          pullups: { beginner: 5, novice: 9, intermediate: 13, advanced: 18, elite: 23 }
+      },
+      '250lbs': {
+          squat: { beginner: 190, novice: 260, intermediate: 325, advanced: 405, elite: 475 },
+          benchPress: { beginner: 160, novice: 220, intermediate: 280, advanced: 355, elite: 425 },
+          deadlift: { beginner: 215, novice: 290, intermediate: 375, advanced: 455, elite: 540 },
+          pushups: { beginner: 20, novice: 34, intermediate: 52, advanced: 70, elite: 90 },
+          pullups: { beginner: 5, novice: 8, intermediate: 12, advanced: 17, elite: 22 }
+      }
     },
-    '210lbs': {
-        squat: { beginner: 150, novice: 200, intermediate: 265, advanced: 340, elite: 410 },
-        benchPress: { beginner: 140, novice: 190, intermediate: 245, advanced: 315, elite: 385 },
-        deadlift: { beginner: 175, novice: 245, intermediate: 320, advanced: 400, elite: 480 },
-        pushups: { beginner: 28, novice: 42, intermediate: 62, advanced: 84, elite: 110 },
-        pullups: { beginner: 7, novice: 11, intermediate: 16, advanced: 21, elite: 26 }
+    female: {
+      '80lbs': {
+        squat: { beginner: 30, novice: 48, intermediate: 70, advanced: 96, elite: 125 },
+        benchPress: { beginner: 25, novice: 40, intermediate: 58, advanced: 80, elite: 105 },
+        deadlift: { beginner: 40, novice: 65, intermediate: 95, advanced: 130, elite: 170 },
+        pushups: { beginner: 8, novice: 15, intermediate: 25, advanced: 35, elite: 45 },
+        pullups: { beginner: 0, novice: 1, intermediate: 3, advanced: 6, elite: 10 }
+      },
+      '90lbs': {
+        squat: { beginner: 35, novice: 55, intermediate: 80, advanced: 108, elite: 140 },
+        benchPress: { beginner: 30, novice: 47, intermediate: 68, advanced: 92, elite: 120 },
+        deadlift: { beginner: 45, novice: 73, intermediate: 105, advanced: 143, elite: 185 },
+        pushups: { beginner: 9, novice: 17, intermediate: 28, advanced: 38, elite: 50 },
+        pullups: { beginner: 0, novice: 1, intermediate: 3, advanced: 7, elite: 11 }
+      },
+      '100lbs': {
+        squat: { beginner: 40, novice: 63, intermediate: 90, advanced: 120, elite: 155 },
+        benchPress: { beginner: 35, novice: 54, intermediate: 78, advanced: 104, elite: 135 },
+        deadlift: { beginner: 50, novice: 81, intermediate: 115, advanced: 156, elite: 200 },
+        pushups: { beginner: 10, novice: 19, intermediate: 31, advanced: 42, elite: 55 },
+        pullups: { beginner: 0, novice: 2, intermediate: 4, advanced: 8, elite: 12 }
+      },
+      '110lbs': {
+        squat: { beginner: 45, novice: 71, intermediate: 100, advanced: 132, elite: 170 },
+        benchPress: { beginner: 40, novice: 61, intermediate: 88, advanced: 116, elite: 150 },
+        deadlift: { beginner: 55, novice: 89, intermediate: 125, advanced: 169, elite: 215 },
+        pushups: { beginner: 11, novice: 21, intermediate: 34, advanced: 46, elite: 60 },
+        pullups: { beginner: 1, novice: 2, intermediate: 4, advanced: 8, elite: 13 }
+      },
+        '120lbs': {
+        squat: { beginner: 50, novice: 79, intermediate: 110, advanced: 144, elite: 185 },
+        benchPress: { beginner: 45, novice: 68, intermediate: 98, advanced: 128, elite: 165 },
+        deadlift: { beginner: 60, novice: 97, intermediate: 135, advanced: 182, elite: 230 },
+        pushups: { beginner: 12, novice: 23, intermediate: 37, advanced: 50, elite: 65 },
+        pullups: { beginner: 1, novice: 3, intermediate: 5, advanced: 9, elite: 14 }
+      },
+        '130lbs': {
+        squat: { beginner: 55, novice: 87, intermediate: 120, advanced: 156, elite: 200 },
+        benchPress: { beginner: 50, novice: 75, intermediate: 108, advanced: 140, elite: 180 },
+        deadlift: { beginner: 65, novice: 105, intermediate: 145, advanced: 195, elite: 245 },
+        pushups: { beginner: 13, novice: 25, intermediate: 40, advanced: 54, elite: 70 },
+        pullups: { beginner: 1, novice: 3, intermediate: 5, advanced: 10, elite: 15 }
+      },
+      '140lbs': {
+        squat: { beginner: 60, novice: 95, intermediate: 130, advanced: 168, elite: 215 },
+        benchPress: { beginner: 55, novice: 82, intermediate: 118, advanced: 152, elite: 195 },
+        deadlift: { beginner: 70, novice: 113, intermediate: 155, advanced: 208, elite: 260 },
+        pushups: { beginner: 14, novice: 27, intermediate: 43, advanced: 58, elite: 75 },
+        pullups: { beginner: 2, novice: 4, intermediate: 6, advanced: 10, elite: 16 }
+      },
+      '150lbs': {
+        squat: { beginner: 65, novice: 103, intermediate: 140, advanced: 180, elite: 230 },
+        benchPress: { beginner: 60, novice: 89, intermediate: 128, advanced: 164, elite: 210 },
+        deadlift: { beginner: 75, novice: 121, intermediate: 165, advanced: 221, elite: 275 },
+        pushups: { beginner: 15, novice: 29, intermediate: 46, advanced: 62, elite: 80 },
+        pullups: { beginner: 2, novice: 4, intermediate: 6, advanced: 11, elite: 17 }
+      },    '160lbs': {
+        squat: { beginner: 70, novice: 111, intermediate: 150, advanced: 192, elite: 245 },
+        benchPress: { beginner: 65, novice: 96, intermediate: 138, advanced: 176, elite: 225 },
+        deadlift: { beginner: 80, novice: 129, intermediate: 175, advanced: 234, elite: 290 },
+        pushups: { beginner: 16, novice: 31, intermediate: 49, advanced: 66, elite: 85 },
+        pullups: { beginner: 2, novice: 5, intermediate: 7, advanced: 11, elite: 18 }
+      },
+      '170lbs': {
+          squat: { beginner: 75, novice: 119, intermediate: 160, advanced: 204, elite: 260 },
+          benchPress: { beginner: 70, novice: 103, intermediate: 148, advanced: 188, elite: 240 },
+          deadlift: { beginner: 85, novice: 137, intermediate: 185, advanced: 247, elite: 305 },
+          pushups: { beginner: 17, novice: 33, intermediate: 52, advanced: 70, elite: 90 },
+          pullups: { beginner: 3, novice: 5, intermediate: 7, advanced: 12, elite: 19 }
+      },
+      '180lbs': {
+          squat: { beginner: 80, novice: 127, intermediate: 170, advanced: 216, elite: 275 },
+          benchPress: { beginner: 75, novice: 110, intermediate: 158, advanced: 200, elite: 255 },
+          deadlift: { beginner: 90, novice: 145, intermediate: 195, advanced: 260, elite: 320 },
+          pushups: { beginner: 18, novice: 35, intermediate: 55, advanced: 74, elite: 95 },
+          pullups: { beginner: 3, novice: 6, intermediate: 8, advanced: 12, elite: 20 }
+      }
     },
-    '220lbs': {
-        squat: { beginner: 160, novice: 215, intermediate: 280, advanced: 355, elite: 425 },
-        benchPress: { beginner: 145, novice: 200, intermediate: 255, advanced: 325, elite: 395 },
-        deadlift: { beginner: 185, novice: 255, intermediate: 335, advanced: 415, elite: 495 },
-        pushups: { beginner: 26, novice: 40, intermediate: 60, advanced: 80, elite: 105 },
-        pullups: { beginner: 6, novice: 10, intermediate: 15, advanced: 20, elite: 25 }
-    },
-    '230lbs': {
-        squat: { beginner: 170, novice: 230, intermediate: 295, advanced: 375, elite: 445 },
-        benchPress: { beginner: 150, novice: 205, intermediate: 260, advanced: 335, elite: 405 },
-        deadlift: { beginner: 195, novice: 270, intermediate: 350, advanced: 430, elite: 510 },
-        pushups: { beginner: 24, novice: 38, intermediate: 58, advanced: 77, elite: 100 },
-        pullups: { beginner: 6, novice: 9, intermediate: 14, advanced: 19, elite: 24 }
-    },
-    '240lbs': {
-        squat: { beginner: 180, novice: 245, intermediate: 310, advanced: 390, elite: 460 },
-        benchPress: { beginner: 155, novice: 215, intermediate: 270, advanced: 345, elite: 415 },
-        deadlift: { beginner: 205, novice: 280, intermediate: 360, advanced: 445, elite: 525 },
-        pushups: { beginner: 22, novice: 36, intermediate: 55, advanced: 74, elite: 95 },
-        pullups: { beginner: 5, novice: 9, intermediate: 13, advanced: 18, elite: 23 }
-    },
-    '250lbs': {
-        squat: { beginner: 190, novice: 260, intermediate: 325, advanced: 405, elite: 475 },
-        benchPress: { beginner: 160, novice: 220, intermediate: 280, advanced: 355, elite: 425 },
-        deadlift: { beginner: 215, novice: 290, intermediate: 375, advanced: 455, elite: 540 },
-        pushups: { beginner: 20, novice: 34, intermediate: 52, advanced: 70, elite: 90 },
-        pullups: { beginner: 5, novice: 8, intermediate: 12, advanced: 17, elite: 22 }
-    }
-    }
-}
+    
+  }
