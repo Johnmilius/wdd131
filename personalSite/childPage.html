@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFlow</title>
+    <script src="script/main.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div id="header_main_container">
+      <header>
+        <div id="header_logoIMG">
+          <a href="index.html">
+            <img src="images/FitFlow_Logo_Shrunk.jpg" alt="FitFlow Logo" />
+          </a>
+        </div>
+        <div id="header_title">
+          <h1>Get Your Stats</h1>
+        </div>
+        <div id="header_childPageLink">
+          <a href="index.html">Home</a>
+        </div>
+      </header>
+
+      <main>
+        <div id="main_introDetails">
+          <p>
+            Welcome to our personalized strength estimation tool! By providing
+            your gender, weight, height, and a self-assessment of muscle
+            density, we'll calculate your BMI and offer a general range of
+            lifting expectations for bench press, deadlifts, and squats. Please
+            remember that these are estimations based on averages and individual
+            results may vary. This tool is designed to provide a starting point
+            for your fitness journey, offering a realistic perspective on
+            potential strength development. For personalized guidance and to
+            ensure safe lifting practices, consulting with a certified fitness
+            professional is always recommended.
+          </p>
+        </div>
+
+        <section id="main_getInfoForm">
+          <form id="physicalInfoForm">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <label for="weight">Weight (lbs):</label>
+            <input
+              type="number"
+              id="weight"
+              name="weight"
+              placeholder="145"
+              required
+            />
+
+            <label for="height">Height (in):</label>
+            <input type="number" id="height" name="height" placeholder="70" />
+
+            <label for="muscle-tone-rating">Rate Your Muscle Tone:</label>
+            <select id="muscle-tone-rating" name="muscle-tone-rating" required>
+              <option value="" disabled selected>Select your rating</option>
+              <option value="1">
+                1 - Very little muscle tone, feels very soft
+              </option>
+              <option value="2">2 - Very soft with minimal definition</option>
+              <option value="3">3 - Soft with slight definition</option>
+              <option value="4">4 - Below average muscle tone</option>
+              <option value="5">5 - Average muscle tone</option>
+              <option value="6">6 - Above average muscle tone</option>
+              <option value="7">7 - Noticeable muscle definition</option>
+              <option value="8">8 - Well-defined muscles</option>
+              <option value="9">9 - Very muscular, high definition</option>
+              <option value="10">10 - Extremely muscular, very defined</option>
+            </select>
+
+            <button type="button" onclick="calculateAndDisplay()">
+              Calculate & Estimate
+            </button>
+          </form>
+        </section>
+
+        <section id="main_results">
+          <div class="main_resultsExcersizeBox">
+            <h2>SQUAT:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
+          <div class="main_resultsExcersizeBox">
+            <h2>DEADLIFT:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
+          <div class="main_resultsExcersizeBox">
+            <h2>BENCH-PRESS:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div id="footer_logoIMG">
+        <img src="images/FitFlow_Logo_Shrunk.jpg" alt="FitFlow Logo" />
+      </div>
+      <div id="footer_copyRightText">
+        <p>&copy; 2025 FitFlow. All rights reserved. JohnMilius</p>
+      </div>
+    </footer>
+  </body>
+</html>
