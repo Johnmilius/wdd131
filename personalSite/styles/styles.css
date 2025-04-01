@@ -36,7 +36,11 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
-/* Body Styles */
+/* 
+
+
+
+Body Styles */
 body {
   margin: 0;
 }
@@ -46,7 +50,11 @@ body {
 * {
   box-sizing: border-box;
 }
-/* Font Styles */
+/* 
+
+
+
+Font Styles */
 
 h1,
 h2,
@@ -61,14 +69,20 @@ a {
   font-family: var(--paragraph-font);
 }
 
-/* Header Styles */
+/* 
+
+
+
+
+Header Styles */
 
 header {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
 }
 #header_logoIMG {
   display: flex;
@@ -84,7 +98,12 @@ header {
   text-decoration: none;
 }
 
-/* Footer Styles */
+/* 
+
+
+
+
+Footer Styles */
 footer {
   display: flex;
   align-items: center;
@@ -93,18 +112,38 @@ footer {
   padding: 0.5rem 0rem 0rem 1rem;
 }
 
-/* Home Page Main Styles */
+/* 
+
+
+ 
+
+Home Page Main Styles */
+
+/* Intro Styles */
+#homeMain_introDetails {
+  margin: 5rem 4rem;
+}
+#homeMain_introDetails > p {
+  text-align: center;
+}
+
+/* home main */
 .homeMain_details {
   border: 1px solid black;
   border-radius: 10px;
   padding: 1rem;
-  margin: 2rem;
+  margin: 2rem 2rem 4rem 2rem;
 }
 .homeMain_details > summary {
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem;
+}
+.homeMain_details > p {
+  padding: 1rem;
 }
 
+/* home main lifting explanations*/
 #homeMain_exerciseExplanations-title > h1,
 #homeMain_exerciseExplanations-title > h3 {
   text-align: center;
@@ -112,34 +151,83 @@ footer {
 #homeMain_exerciseExplanations > div {
   border-bottom: 1px solid black;
 }
-.homeMain_exerciseExplanations-image {
-  width: 200px;
+
+
+
+#homeMain_exerciseExplanations-container {
+}
+.homeMain_exerciseExplanations-odd,
+.homeMain_exerciseExplanations-even {
+  display: grid;
+  align-items: center; /* Add vertical alignment */
+  gap: 1.5rem; /* Add gap for spacing */
+  padding-bottom: 1.5rem; /* Add padding before border */
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #ddd; /* Add bottom border */
 }
 
-.homeMain_exerciseExplanations-deadlift {
-  display: flex;
+/* deadlift, squat */
+.homeMain_exerciseExplanations-odd {
+  grid-template-columns: 2fr 1fr;
+}
+.homeMain_exerciseExplanations-infoOdd {
+  grid-column: 1 / 2;
+}
+.homeMain_exerciseExplanations-imageOdd {
+  grid-column: 2 / 3;
+}
+/* benchpress */
+.homeMain_exerciseExplanations-even {
+  grid-template-columns: 1fr 2fr;
+}
+.homeMain_exerciseExplanations-infoEven {
+  grid-column: 2 / 3;
+}
+.homeMain_exerciseExplanations-imageEven {
+  grid-column: 1 / 2;
 }
 
-/* Child Page Main */
-
-#childMain_introDetails{
-  margin: 1rem;
+.homeMain_exerciseExplanations-imageOdd img,
+.homeMain_exerciseExplanations-imageEven img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* 
 
-/* Child Form Styles */
+
+
+
+
+Child Page Main */
+
+#childMain_introDetails {
+  margin: 5rem 4rem;
+}
+#childMain_introDetails > p {
+  text-align: center;
+}
+
+/* 
+
+
+
+
+Child Form Styles */
+
 #physicalInfoForm {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 1.5rem;
-
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 1rem;
-
-  justify-items: center;
-  align-items: center;
+  grid-template-rows: repeat(4, auto);
+  gap: 1.5rem;
+  align-items: start;
+  justify-items: stretch;
+  font-family: var(--paragraph-font);
+  margin-bottom: 4rem;
 }
 #form_height {
   grid-column: 1 / 2;
@@ -171,33 +259,15 @@ footer {
   flex-direction: column;
   width: 100%;
 }
-#physicalInfoForm {
-}
-
-#physicalInfoForm {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
-  gap: 1.5rem;
-  align-items: start; 
-  justify-items: stretch; 
-  font-family: var(--paragraph-font);
-}
-
 .form_styling {
   display: flex;
   flex-direction: column;
 }
-
 .form_styling label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #333;
 }
-
 .form_styling input,
 .form_styling select {
   padding: 0.75rem;
@@ -208,7 +278,6 @@ footer {
   width: 100%;
   box-sizing: border-box; /* Include padding and border in width */
 }
-
 .form_styling input:focus,
 .form_styling select:focus {
   outline: none;
@@ -223,10 +292,34 @@ footer {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   width: 100%;
 }
-
 #form_button button:hover {
   background-color: #0056b3;
 }
+
+/* 
+
+
+
+
+
+
+Results */
+
+#childMain_results_container {
+  margin: 2rem;
+}
+.childMain_resultsExerciseBox {
+  margin: 4rem;
+}
+
+/* Home media Querys */
+@media (min-width: 1000px) {
+  #header_main_container {
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+}
+
+/* Child media Querys */
