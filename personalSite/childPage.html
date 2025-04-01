@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFlow</title>
-    <script src="script/main.js" defer></script>
+    <script src="script/childMain.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
       </header>
 
       <main>
-        <div id="main_introDetails">
+        <div id="childMain_introDetails">
           <p>
             Welcome to our personalized strength estimation tool! By providing
             your gender, weight, height, and a self-assessment of muscle
@@ -39,51 +39,82 @@
           </p>
         </div>
 
-        <section id="main_getInfoForm">
+        <section id="childMain_getInfoForm">
           <form id="physicalInfoForm">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <div id="form_weight" class="form_styling">
+              <div>
+                <label for="weight">Weight (lbs):</label>
+                <input
+                  type="number"
+                  id="weight"
+                  name="weight"
+                  placeholder="145"
+                  required
+                />
+              </div>
+            </div>
 
-            <label for="weight">Weight (lbs):</label>
-            <input
-              type="number"
-              id="weight"
-              name="weight"
-              placeholder="145"
-              required
-            />
+            <div id="form_height" class="form_styling">
+              <div>
+                <label for="height">Height (in):</label>
+                <input
+                  type="number"
+                  id="height"
+                  name="height"
+                  placeholder="70"
+                />
+              </div>
+            </div>
 
-            <label for="height">Height (in):</label>
-            <input type="number" id="height" name="height" placeholder="70" />
+            <div id="form_muscleTone" class="form_styling">
+              <div>
+                <label for="muscle-tone-rating">Rate Your Muscle Tone:</label>
+                <select
+                  id="muscle-tone-rating"
+                  name="muscle-tone-rating"
+                  required
+                >
+                  <option value="" disabled selected>Select your rating</option>
+                  <option value="1">
+                    1 - Very little muscle tone, feels very soft
+                  </option>
+                  <option value="2">
+                    2 - Very soft with minimal definition
+                  </option>
+                  <option value="3">3 - Soft with slight definition</option>
+                  <option value="4">4 - Below average muscle tone</option>
+                  <option value="5">5 - Average muscle tone</option>
+                  <option value="6">6 - Above average muscle tone</option>
+                  <option value="7">7 - Noticeable muscle definition</option>
+                  <option value="8">8 - Well-defined muscles</option>
+                  <option value="9">9 - Very muscular, high definition</option>
+                  <option value="10">
+                    10 - Extremely muscular, very defined
+                  </option>
+                </select>
+              </div>
+            </div>
 
-            <label for="muscle-tone-rating">Rate Your Muscle Tone:</label>
-            <select id="muscle-tone-rating" name="muscle-tone-rating" required>
-              <option value="" disabled selected>Select your rating</option>
-              <option value="1">
-                1 - Very little muscle tone, feels very soft
-              </option>
-              <option value="2">2 - Very soft with minimal definition</option>
-              <option value="3">3 - Soft with slight definition</option>
-              <option value="4">4 - Below average muscle tone</option>
-              <option value="5">5 - Average muscle tone</option>
-              <option value="6">6 - Above average muscle tone</option>
-              <option value="7">7 - Noticeable muscle definition</option>
-              <option value="8">8 - Well-defined muscles</option>
-              <option value="9">9 - Very muscular, high definition</option>
-              <option value="10">10 - Extremely muscular, very defined</option>
-            </select>
+            <div id="form_gender" class="form_styling">
+              <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
 
-            <button type="button" onclick="calculateAndDisplay()">
-              Calculate & Estimate
-            </button>
+            <div id="form_button" class="form_styling">
+              <button type="button" onclick="calculateAndDisplay()">
+                Calculate & Estimate
+              </button>
+            </div>
           </form>
         </section>
 
-        <section id="main_results">
-          <div class="main_resultsExcersizeBox">
+        <section id="childMain_results">
+          <div class="childMain_resultsExcersizeBox">
             <h2>SQUAT:</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -95,7 +126,7 @@
               voluptate illo.
             </p>
           </div>
-          <div class="main_resultsExcersizeBox">
+          <div class="childMain_resultsExcersizeBox">
             <h2>DEADLIFT:</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,7 +138,7 @@
               voluptate illo.
             </p>
           </div>
-          <div class="main_resultsExcersizeBox">
+          <div class="childMain_resultsExcersizeBox">
             <h2>BENCH-PRESS:</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
