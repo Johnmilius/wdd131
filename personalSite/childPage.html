@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFlow</title>
-    <script src="script/main.js" type="module" defer></script>
+    <script src="script/main.js" type="module"></script>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" type="image/png" href="images/FitFlow_Logo_favicon.jpg" />
   </head>
@@ -86,6 +86,7 @@
               <div>
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
+                  <option value="" disabled selected>Select an option</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </select>
@@ -140,7 +141,6 @@
                 class="hover-effect"
                 id="formButton"
                 type="button"
-                required
               >
                 Calculate & Estimate
               </button>
@@ -149,38 +149,6 @@
         </section>
 
         <section id="childMain_results_container">
-          <h2>For a <strong>male</strong> weighing <strong>168</strong> lbs</h2>
-          <p>For the squat, the expected weights are:</p>
-          <ul>
-            <li><strong>Beginner:</strong> 112 lbs</li>
-            <li><strong>Novice:</strong> 155 lbs</li>
-            <li><strong>Intermediate:</strong> 209 lbs</li>
-            <li><strong>Advanced:</strong> 270 lbs</li>
-            <li><strong>Elite:</strong> 336 lbs</li>
-          </ul>
-
-          <p>For the bench press, the expected weights are:</p>
-          <ul>
-            <li><strong>Beginner:</strong> 112 lbs</li>
-            <li><strong>Novice:</strong> 155 lbs</li>
-            <li><strong>Intermediate:</strong> 209 lbs</li>
-            <li><strong>Advanced:</strong> 270 lbs</li>
-            <li><strong>Elite:</strong> 336 lbs</li>
-          </ul>
-
-          <p>For deadlifts, the expected weights are:</p>
-          <ul>
-            <li><strong>Beginner:</strong> 141 lbs</li>
-            <li><strong>Novice:</strong> 197 lbs</li>
-            <li><strong>Intermediate:</strong> 260 lbs</li>
-            <li><strong>Advanced:</strong> 338 lbs</li>
-            <li><strong>Elite:</strong> 415 lbs</li>
-          </ul>
-          <div>
-            <h2>Here is some additional information</h2>
-            <p>Your Body Mass Index is <strong>$$$</strong></p>
-            <p>Your Body Fat Percentage is <strong>$$$</strong></p>
-          </div>
         </section>
       </main>
     </div>

@@ -55,7 +55,7 @@ function displayResults(personObj){
 }
 
 function resultsTemplete(personObj){
-    const { gender, weight, strengthStandards} = personObj;
+    const { gender, weight, BMI, BFP, strengthStandards} = personObj;
     const { squat, benchPress, deadlift } = strengthStandards;
     return(
     `
@@ -88,8 +88,8 @@ function resultsTemplete(personObj){
         </ul>
         <div>
             <h2>Here is some additional information</h2>
-            <p>Your Body Mass Index is <strong>$$$</strong></p>
-            <p>Your Body Fat Percentage is <strong>$$$</strong></p>
+            <p>Your Body Mass Index is <strong>${BMI}</strong></p>
+            <p>Your Body Fat Percentage is <strong>${BFP}</strong></p>
         </div>
     `
     )
