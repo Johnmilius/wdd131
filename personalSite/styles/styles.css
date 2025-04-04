@@ -6,11 +6,11 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #005999; /* medium dark blue */
-  --secondary-color: #282828; /* almost black */
+  --primary-color: #005999; 
+  --secondary-color: #282828; 
   --accent1-color: #a3c2e0;
-  --accent2-color: #e0e0e0; /* Darker Gray (Dividers) */
-  --text-color: #e0e0e0; /* Light Gray Text */
+  --accent2-color: #e0e0e0; 
+  --text-color: #e0e0e0; 
   --back-ground-color: #e0f2fe;
   /* #2364d2 
      hsl(212, 89%, 65%) DropDownPractice #a5e8fef2 */
@@ -244,6 +244,32 @@ Home Page Main Styles */
   color: var(--primary-color);
 }
 
+
+/* generate tips */
+#homeMain_excerciseTips{
+  margin: 70px 0 120px 0;
+  text-align: center;
+}
+#homeMain_excerciseTips div{
+  margin: 1rem;
+  overflow: hidden; 
+}
+
+#tips_button button {
+  background-color: #282828;
+  color: white;
+  padding: 12px 24px;
+  border: none; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  font-weight: bold;
+  transition: all 0.15s ease-in-out;
+}
+
+#tips_button button:active {
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+}
 
 
 /* 

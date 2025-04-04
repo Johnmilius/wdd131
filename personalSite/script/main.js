@@ -1,5 +1,5 @@
 //main.js
-import {heightModifiers, strengthStandards} from "./arrayInformation.mjs";
+import {heightModifiers, strengthStandards, liftingTips} from "./arrayInformation.mjs";
 
 function formHandler(){
     // initialize variables and grab values
@@ -185,9 +185,37 @@ function getStrengthStandards(personObj, strengthStandards){
     return personsStrengthStandard
 }
 
-function applyStrengthStandardsModifier(personObj, heightModifier){
 
+
+
+
+
+function randomTipsHandler(){
+    let shuffledTips = liftingTips.sort(() => Math.random() - 0.5); 
+    let threeRandomTips = shuffledTips.splice(0,3);
+
+    //debugging statement
+    console.log(threeRandomTips);
+
+    let htmlString = randomTipsTemplate(threeRandomTips)
+
+    const exerciseTipsSection = document.querySelector('#homeMain_excerciseTips');
+    exerciseTipsSection.insertAdjacentHTML('beforeend', htmlString);
 }
 
-const formButton = document.querySelector('#formButton');
-formButton.addEventListener('click', formHandler);
+function randomTipsTemplate(threeRandomTips){
+    let htmlString = threeRandomTips.map(tip => `<p>${tip}</p>`) .join('');
+
+    return(
+    `         
+    <div id="tipResults">
+        ${htmlString}
+    </div>
+  `)
+}
+
+const randomTipsButton = document.querySelector('#tipsButton');
+randomTipsButton.addEventListener('click', randomTipsHandler);
+
+const physicalFormButton = document.querySelector('#formButton');
+physicalFormButton.addEventListener('click', formHandler);

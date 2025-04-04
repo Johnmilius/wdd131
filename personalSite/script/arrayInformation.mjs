@@ -16,9 +16,6 @@ export const heightModifiers = {
   }
 };
 
-  
-
-
 export const strengthStandards = {
   male: {
     '100lbs': {
@@ -160,3 +157,26 @@ export const strengthStandards = {
     }
   }
 }
+
+export const liftingTips = [
+  "Start with compound movements like squats, deadlifts, and bench press.",
+  "Learn proper form before increasing weight — avoid injuries early.",
+  "Use free weights to build stabilizer muscles and real-world strength.",
+  "Don't ego lift — leave your pride at the door and focus on growth.",
+  "Warm up before every session to improve performance and prevent injury.",
+  "Track your progress with sets, reps, and weight to stay motivated.",
+  "Stick to a simple program — consistency beats complexity.",
+  "Progressive overload is key: increase weight, reps, or intensity over time.",
+  "Rest 60-90 seconds between sets for optimal hypertrophy.",
+  "Lift 3-4 times a week — quality over quantity.",
+  "Eat enough protein daily to support muscle repair and growth.",
+  "Stay hydrated — muscles need water to function properly.",
+  "Prioritize sleep and recovery — gains happen when you rest.",
+  "Use mirrors to monitor form, not just for flexing.",
+  "Don't skip leg day — it builds your strength foundation.",
+  "Include core exercises for better balance and injury prevention.",
+  "Listen to your body — pain is a warning, not a challenge.",
+  "Be patient — results take time, stay consistent.",
+  "Celebrate small wins — every step forward matters.",
+  "Make lifting fun and part of your lifestyle — enjoy the process."
+];
