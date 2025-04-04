@@ -1,21 +1,3 @@
-export const heightModifiers = {
-  short: { // Male > 66 inch Female > 62
-    squat: 1.03,          // 3% boost for short lifters
-    benchPress: 1.04,     // 4% boost for bench press
-    deadlift: 0.98      // 2% penalty for deadlift
-  },
-  average: { // Male between 66 and 72 Female between 62 and 67
-    squat: 1.00,
-    benchPress: 1.00,
-    deadlift: 1.00
-  },
-  tall: { // Male Over 72 Female over 67
-    squat: 0.95,          // 5% penalty for tall lifters
-    benchPress: 0.95,     // 5% penalty for bench press
-    deadlift: 1.05      // 5% boost for deadlift
-  }
-};
-
 export const strengthStandards = {
   male: {
     '100lbs': {

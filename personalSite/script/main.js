@@ -1,5 +1,5 @@
 //main.js
-import {heightModifiers, strengthStandards, liftingTips} from "./arrayInformation.mjs";
+import {strengthStandards, liftingTips} from "./arrayInformation.mjs";
 
 function formHandler(){
     // initialize variables and grab values
@@ -88,8 +88,8 @@ function resultsTemplete(personObj){
         </ul>
         <div>
             <h2>Here is some additional information</h2>
-            <p>Your Body Mass Index is <strong>${BMI}</strong></p>
-            <p>Your Body Fat Percentage is <strong>${BFP}</strong></p>
+            <p>Your Body Mass Index is <strong>${BMI.toFixed(2)}</strong></p>
+            <p>Your Body Fat Percentage is <strong>${BFP.toFixed(2)}</strong></p>
         </div>
     `
     )
@@ -185,11 +185,6 @@ function getStrengthStandards(personObj, strengthStandards){
     return personsStrengthStandard
 }
 
-
-
-
-
-
 function randomTipsHandler(){
     let shuffledTips = liftingTips.sort(() => Math.random() - 0.5); 
     let threeRandomTips = shuffledTips.splice(0,3);
@@ -214,8 +209,12 @@ function randomTipsTemplate(threeRandomTips){
   `)
 }
 
-const randomTipsButton = document.querySelector('#tipsButton');
-randomTipsButton.addEventListener('click', randomTipsHandler);
-
 const physicalFormButton = document.querySelector('#formButton');
-physicalFormButton.addEventListener('click', formHandler);
+if (physicalFormButton) {
+    physicalFormButton.addEventListener('click', formHandler);
+}
+
+const randomTipsButton = document.querySelector('#tipsButton');
+if (randomTipsButton) {
+    randomTipsButton.addEventListener('click', randomTipsHandler);
+}
