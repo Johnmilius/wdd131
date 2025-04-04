@@ -55,11 +55,12 @@ function displayResults(personObj){
 }
 
 function resultsTemplete(personObj){
-    const { gender, weight, personsStrengthStandard} = personObj;
-    const { squat, benchPress, deadlift } = personsStrengthStandard;
+    const { gender, weight, strengthStandards} = personObj;
+    const { squat, benchPress, deadlift } = strengthStandards;
     return(
     `
-        <p>For a ${gender} weighing ${weight} lbs, the expected squat weights based on your experience level are:</p>
+        <h3>For a <strong>${gender}</strong> weighing <strong>${weight}</strong> lbs</h3>
+        <p>For the squat, the expected weights are:</p>
         <ul>
             <li><strong>Beginner:</strong> ${squat.beginner} lbs</li>
             <li><strong>Novice:</strong> ${squat.novice} lbs</li>
