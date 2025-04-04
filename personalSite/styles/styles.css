@@ -249,11 +249,15 @@ Child Form Styles */
 }
 #form_muscleTone {
   grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+#form_age{
+  grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 #form_gender {
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 #form_button {
   grid-column: 1 / 3;
