@@ -41,8 +41,6 @@
 
 
 Body Styles */
-html{
-}
 body {
   margin: 0;
 }
@@ -56,8 +54,18 @@ body {
 
 
 
-Font Styles */
+Colors */
+html{
+  background: radial-gradient(ellipse at center, #F7FAFD 20%, #E3ECF7 50%, #A3C2E0 100%);
+}
 
+
+
+/* 
+
+
+
+Font Styles */
 h1,
 h2,
 h3,
@@ -74,6 +82,7 @@ a, label, button {
 
 h1{
   font-size: 3rem;
+  color: #C55300;
 }
 
 
@@ -155,7 +164,7 @@ Home Page Main Styles */
 
 /* home main lifting explanations*/
 #homeMain_exerciseExplanations-title > h1,
-#homeMain_exerciseExplanations-title > h3 {
+#homeMain_exerciseExplanations-title > p {
   text-align: center;
 }
 #homeMain_exerciseExplanations > div {
