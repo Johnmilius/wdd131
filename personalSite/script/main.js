@@ -59,7 +59,7 @@ function resultsTemplete(personObj){
     const { squat, benchPress, deadlift } = strengthStandards;
     return(
     `
-        <h3>For a <strong>${gender}</strong> weighing <strong>${weight}</strong> lbs</h3>
+        <h2>For a <strong>${gender}</strong> weighing <strong>${weight}</strong> lbs</h2>
         <p>For the squat, the expected weights are:</p>
         <ul>
             <li><strong>Beginner:</strong> ${squat.beginner} lbs</li>
@@ -86,6 +86,11 @@ function resultsTemplete(personObj){
             <li><strong>Advanced:</strong> ${deadlift.advanced} lbs</li>
             <li><strong>Elite:</strong> ${deadlift.elite} lbs</li>
         </ul>
+        <div>
+            <h2>Here is some additional information</h2>
+            <p>Your Body Mass Index is <strong>$$$</strong></p>
+            <p>Your Body Fat Percentage is <strong>$$$</strong></p>
+        </div>
     `
     )
 }
