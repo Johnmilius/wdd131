@@ -48,9 +48,15 @@ function formHandler(){
 }
 
 function displayResults(personObj){
+    let html = resultsTemplete(personObj);
+    let resultsSection = document.querySelector('#childMain_results_container');
+
+    resultsSection.insertAdjacentHTML('beforeend', html)
 }
 
-function resultsTemplete(){
+function resultsTemplete(personObj){
+    const { gender, weight, personsStrengthStandard} = personObj;
+    const { squat, benchPress, deadlift } = personsStrengthStandard;
     return(
     `
         <p>For a ${gender} weighing ${weight} lbs, the expected squat weights based on your experience level are:</p>

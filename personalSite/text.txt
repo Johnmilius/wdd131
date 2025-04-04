@@ -36,3 +36,48 @@
             </p>
           </div>
         </section>
+
+
+
+
+
+
+
+
+
+        <div class="childMain_resultsExerciseBox">
+            <h2>SQUAT:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
+          <div class="childMain_resultsExerciseBox">
+            <h2>DEADLIFT:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
+          <div class="childMain_resultsExerciseBox">
+            <h2>BENCH-PRESS:</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores inventore obcaecati accusantium expedita reiciendis
+              voluptas, eveniet voluptate! Maiores et impedit praesentium
+              officiis facere, magni sunt nostrum unde saepe recusandae eos
+              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
+              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
+              voluptate illo.
+            </p>
+          </div>
