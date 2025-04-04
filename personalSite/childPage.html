@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFlow</title>
-    <script src="script/childMain.js" defer></script>
+    <script src="script/main.js" type="module" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" type="image/png" href="images/FitFlow_Logo_favicon.jpg" />
   </head>
@@ -77,22 +77,49 @@
                 >
                   <option value="" disabled selected>Select your rating</option>
                   <option value="1">
-                    1 - Very little muscle tone, feels very soft
+                    1 - Very skinny - Very little muscle mass and fat
                   </option>
                   <option value="2">
-                    2 - Very soft with minimal definition
+                    2 - Skinny - A bit of muscle mass, but still low body fat
                   </option>
                   <option value="3">3 - Soft with slight definition</option>
-                  <option value="4">4 - Below average muscle tone</option>
-                  <option value="5">5 - Average muscle tone</option>
-                  <option value="6">6 - Above average muscle tone</option>
-                  <option value="7">7 - Noticeable muscle definition</option>
-                  <option value="8">8 - Well-defined muscles</option>
-                  <option value="9">9 - Very muscular, high definition</option>
+                  <option value="4">
+                    4 - Lean - Low body fat and moderate muscle definition
+                  </option>
+                  <option value="5">
+                    5 - Very lean - Well-defined muscles, low body fat
+                  </option>
+                  <option value="6">
+                    6 - Muscular - Good muscle definition, moderate body fat
+                  </option>
+                  <option value="7">
+                    7 - Average - Some muscle mass, moderate body fat
+                  </option>
+                  <option value="8">
+                    8 - Slightly overweight - Less muscle definition, noticeable
+                    fat accumulation
+                  </option>
+                  <option value="9">
+                    9 - Overweight - Less muscle mass, higher body fat
+                    percentage
+                  </option>
                   <option value="10">
-                    10 - Extremely muscular, very defined
+                    10 - Fat - High body fat, little muscle definition
                   </option>
                 </select>
+              </div>
+            </div>
+
+            <div id="form_age" class="form_styling">
+              <div>
+                <label for="age">Age:</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  placeholder="30"
+                  min="0"
+                />
               </div>
             </div>
 
@@ -107,7 +134,7 @@
             </div>
 
             <div id="form_button" class="form_styling">
-              <button type="button" onclick="calculateAndDisplay()">
+              <button id="formButton" type="button">
                 Calculate & Estimate
               </button>
             </div>
@@ -115,42 +142,6 @@
         </section>
 
         <section id="childMain_results_container">
-          <div class="childMain_resultsExerciseBox">
-            <h2>SQUAT:</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores inventore obcaecati accusantium expedita reiciendis
-              voluptas, eveniet voluptate! Maiores et impedit praesentium
-              officiis facere, magni sunt nostrum unde saepe recusandae eos
-              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
-              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
-              voluptate illo.
-            </p>
-          </div>
-          <div class="childMain_resultsExerciseBox">
-            <h2>DEADLIFT:</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores inventore obcaecati accusantium expedita reiciendis
-              voluptas, eveniet voluptate! Maiores et impedit praesentium
-              officiis facere, magni sunt nostrum unde saepe recusandae eos
-              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
-              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
-              voluptate illo.
-            </p>
-          </div>
-          <div class="childMain_resultsExerciseBox">
-            <h2>BENCH-PRESS:</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores inventore obcaecati accusantium expedita reiciendis
-              voluptas, eveniet voluptate! Maiores et impedit praesentium
-              officiis facere, magni sunt nostrum unde saepe recusandae eos
-              tenetur sed odit tempora voluptatem culpa incidunt voluptatum
-              dolorem. Quibusdam vero culpa esse nobis possimus nihil cum rem
-              voluptate illo.
-            </p>
-          </div>
         </section>
       </main>
     </div>
