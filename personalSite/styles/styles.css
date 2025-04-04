@@ -50,6 +50,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
 /* 
 
 
@@ -97,10 +98,9 @@ header {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  border: 1px solid black;
-  border-radius: 1.5rem;
+  border-radius: 44px;
   padding: 0 1rem;
-
+  background-color: white;
 }
 #header_logoIMG {
   display: flex;
@@ -114,6 +114,8 @@ header {
 }
 #header_childPageLink a {
   text-decoration: none;
+  color: var(--primary-color);
+  border-radius: 20px;
 }
 
 /* 
@@ -125,11 +127,15 @@ Footer Styles */
 footer {
   display: flex;
   align-items: center;
-  border-top: 1px solid black;
+  background-color: white;
   gap: 1rem;
-  padding: 0.5rem 0rem 0rem 1rem;
+  padding: 0.5rem 0rem .5 rem 1rem;
+  border-top: 2.5px solid var(--secondary-color);
 }
-
+#footer_logoIMG{
+  border-radius: 18px;
+  overflow: hidden;
+}
 /* 
 
 
@@ -147,7 +153,6 @@ Home Page Main Styles */
 
 /* home main */
 .homeMain_details {
-  border: 1px solid black;
   border-radius: 10px;
   padding: 1rem;
   margin: 2rem 2rem 4rem 2rem;
@@ -171,10 +176,6 @@ Home Page Main Styles */
   border-bottom: 1px solid black;
 }
 
-
-
-#homeMain_exerciseExplanations-container {
-}
 .homeMain_exerciseExplanations-odd,
 .homeMain_exerciseExplanations-even {
   display: grid;
@@ -212,6 +213,16 @@ Home Page Main Styles */
   height: auto;
   display: block;
 }
+#homeMain_exerciseExplanations h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+#homeMain_exerciseExplanations strong{
+  color: var(--primary-color);
+}
+
+
 
 /* 
 
@@ -236,8 +247,9 @@ Child Page Main */
 Child Form Styles */
 
 #physicalInfoForm {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  background-color: white;
+  border-radius: 50px;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -247,7 +259,8 @@ Child Form Styles */
   justify-items: stretch;
   font-family: var(--paragraph-font);
   margin-bottom: 4rem;
-}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+} 
 #form_height {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -307,6 +320,7 @@ Child Form Styles */
   border-color: #007bff; /* Example focus color */
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
+
 #form_button button {
   background-color: #007bff; /* Example button color */
   color: white;
@@ -345,3 +359,16 @@ Results */
 }
 
 /* Child media Querys */
+
+
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  padding: 20px;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
