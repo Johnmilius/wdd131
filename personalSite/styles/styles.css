@@ -452,4 +452,9 @@ Results */
   #footer_copyRightText p:nth-of-type(2){
     display: none;
   }
+
+  /* child page */
+  #childMain_introDetails{
+    display: none;
+  }
 }
