@@ -1,5 +1,5 @@
 //main.js
-import {strengthStandards, liftingTips} from "./arrayInformation.mjs";
+import {strengthStandards, liftingTips} from "./objectInformation.mjs";
 
 function formHandler(){
     // initialize variables and grab values
@@ -10,39 +10,18 @@ function formHandler(){
     let age = document.querySelector("#age").value;
     let gender = document.querySelector('#gender').value;
     
-    // debugging
-    // console.log("Height: ", height);
-    // console.log("Weight: ", weight);
-    // console.log("Muscle Tone Rating: ", toneRating);
-    // console.log("Gender: ", gender)
-
-    // create object
     personObj["height"] = parseInt(height);
     personObj["weight"] = parseInt(weight);
     personObj["toneRating"] = parseInt(toneRating);
     personObj["age"] = parseInt(age);
     personObj["gender"] = gender;
-   
-    // debugging statement
-    console.log(personObj);
 
     personObj["BMI"] = calculateBMI(personObj);
     personObj["BFP"] = calculateBFP(personObj);
 
-    // debugging statement
-    console.log(personObj);
-
     personObj["heightModifier"] = calculateHeightModifier(personObj.height, personObj.gender);
 
-    // debugging statement
-    console.log(personObj);
-
     personObj["strengthStandards"] = getStrengthStandards(personObj, strengthStandards);
-
-    // debugging statement
-    console.log(personObj);
-
-    // personObj["strengthStandards"] = applyStrengthStandardsModifier(personObj, heightModifiers);
 
     displayResults(personObj);
 }
@@ -132,8 +111,7 @@ function calculateBFP(personObj){
     } else if (toneRating === 1) {
         toneAdjustment = 0; //skinny
     }
-    
-    // Apply the tone adjustment to BFP
+
     BFP += toneAdjustment;
     
     return BFP
@@ -188,9 +166,6 @@ function getStrengthStandards(personObj, strengthStandards){
 function randomTipsHandler(){
     let shuffledTips = liftingTips.sort(() => Math.random() - 0.5); 
     let threeRandomTips = shuffledTips.splice(0,3);
-
-    //debugging statement
-    console.log(threeRandomTips);
 
     let htmlString = randomTipsTemplate(threeRandomTips)
 

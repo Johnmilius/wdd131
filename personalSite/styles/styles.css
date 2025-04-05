@@ -6,14 +6,12 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #005999; 
-  --secondary-color: #282828; 
+  --primary-color: #005999;
+  --secondary-color: #282828;
   --accent1-color: #a3c2e0;
-  --accent2-color: #e0e0e0; 
-  --text-color: #e0e0e0; 
+  --accent2-color: #e0e0e0;
+  --text-color: #e0e0e0;
   --back-ground-color: #e0f2fe;
-  /* #2364d2 
-     hsl(212, 89%, 65%) DropDownPractice #a5e8fef2 */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat", sans-serif;
@@ -36,11 +34,7 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
-/* 
-
-
-
-Body Styles */
+/* Body Styles */
 body {
   margin: 0;
 }
@@ -51,7 +45,8 @@ body {
   box-sizing: border-box;
 }
 .hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
   padding: 20px;
 }
 
@@ -60,22 +55,18 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-/* 
 
-
-
-Colors */
-html{
-  background: radial-gradient(ellipse at center, #F7FAFD 20%, #E3ECF7 50%, #A3C2E0 125%);
+/* Colors */
+html {
+  background: radial-gradient(
+    ellipse at center,
+    #f7fafd 20%,
+    #e3ecf7 50%,
+    #a3c2e0 125%
+  );
 }
 
-
-
-/* 
-
-
-
-Font Styles */
+/* Font Styles */
 h1,
 h2,
 h3,
@@ -85,24 +76,20 @@ summary {
 }
 
 p,
-a, label, button, li {
+a,
+label,
+button,
+li {
   font-family: var(--paragraph-font);
   font-size: 1.33rem;
 }
 
-h1{
+h1 {
   font-size: 3rem;
-  color: #C55300;
+  color: #c55300;
 }
 
-
-/* 
-
-
-
-
-Header Styles */
-
+/* Header Styles */
 header {
   display: flex;
   justify-content: center;
@@ -120,10 +107,10 @@ header {
   border-radius: 25px;
   padding: 10px;
 }
-#header_logoIMG a{
+#header_logoIMG a {
   height: 64px;
 }
-#header_logoIMG img{
+#header_logoIMG img {
   overflow: hidden;
 }
 #header_childPageLink {
@@ -136,34 +123,25 @@ header {
   border-radius: 20px;
 }
 
-/* 
-
-
-
-
-Footer Styles */
+/* Footer Styles */
 footer {
   display: flex;
   align-items: center;
   background-color: white;
   gap: 1rem;
-  padding: 0.5rem 0rem .5rem 1rem;
+  padding: 0.5rem 0rem 0.5rem 1rem;
   border-top: 2.5px solid var(--secondary-color);
 }
-#footer_logoIMG{
+#footer_logoIMG {
   border-radius: 18px;
   overflow: hidden;
 }
-#footer_copyRightText{
+#footer_copyRightText {
   display: flex;
   gap: 1ch;
 }
-/* 
 
-
- 
-
-Home Page Main Styles */
+/* Home Page Main Styles */
 
 /* Intro Styles */
 #homeMain_introDetails {
@@ -178,7 +156,7 @@ Home Page Main Styles */
   border-radius: 10px;
   padding: 1rem;
   margin: 2rem 2rem 4rem 2rem;
-  background-color:white;
+  background-color: white;
 }
 .homeMain_details > summary {
   font-size: 1.5rem;
@@ -201,11 +179,11 @@ Home Page Main Styles */
 .homeMain_exerciseExplanations-odd,
 .homeMain_exerciseExplanations-even {
   display: grid;
-  align-items: center; /* Add vertical alignment */
-  gap: 1.5rem; /* Add gap for spacing */
-  padding-bottom: 1.5rem; /* Add padding before border */
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  border-bottom: 1px solid #ddd; /* Add bottom border */
+  border-bottom: 1px solid #ddd;
 }
 
 /* deadlift, squat */
@@ -235,51 +213,42 @@ Home Page Main Styles */
   height: auto;
   display: block;
 }
-#homeMain_exerciseExplanations h2{
+#homeMain_exerciseExplanations h2 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color);
 }
-#homeMain_exerciseExplanations strong{
+#homeMain_exerciseExplanations strong {
   color: var(--primary-color);
 }
 
-
 /* generate tips */
-#homeMain_excerciseTips{
+#homeMain_excerciseTips {
   margin: 70px 0 120px 0;
   text-align: center;
 }
-#homeMain_excerciseTips div{
+#homeMain_excerciseTips div {
   margin: 1rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #tips_button button {
   background-color: #282828;
   color: white;
   padding: 12px 24px;
-  border: none; 
+  border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   font-weight: bold;
   transition: all 0.15s ease-in-out;
 }
 
 #tips_button button:active {
-  transform: translateY(2px); 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-
-/* 
-
-
-
-
-
-Child Page Main */
-
+/* Child Page Main */
 #childMain_introDetails {
   margin: 5rem 4rem;
 }
@@ -287,13 +256,7 @@ Child Page Main */
   text-align: center;
 }
 
-/* 
-
-
-
-
-Child Form Styles */
-
+/* Child Form Styles */
 #physicalInfoForm {
   border: 1px solid var(--secondary-color);
   background-color: white;
@@ -308,7 +271,7 @@ Child Form Styles */
   font-family: var(--paragraph-font);
   margin-bottom: 4rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-} 
+}
 #form_height {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -321,7 +284,7 @@ Child Form Styles */
   grid-column: 1 / 3;
   grid-row: 3 / 4;
 }
-#form_age{
+#form_age {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
@@ -360,17 +323,17 @@ Child Form Styles */
   font-size: 1rem;
   margin-bottom: 1rem;
   width: 100%;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
 }
 .form_styling input:focus,
 .form_styling select:focus {
   outline: none;
-  border-color: #007bff; /* Example focus color */
+  border-color: #007bff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 #form_button button {
-  background-color: #0056B3; /* Example button color */
+  background-color: #0056b3;
   color: white;
   padding: 1rem 1.5rem;
   border: none;
@@ -382,15 +345,7 @@ Child Form Styles */
   background-color: #00438a;
 }
 
-/* 
-
-
-
-
-
-
-Results */
-
+/* Results */
 #childMain_results_container {
   margin: 2rem;
 }
@@ -399,12 +354,9 @@ Results */
 }
 
 /* media queries */
-.hide{
+.hide {
   display: none;
 }
-
-
-
 
 @media (min-width: 1000px) {
   #header_main_container {
@@ -413,31 +365,29 @@ Results */
   }
 }
 
-
-@media (max-width: 650px){
-
+@media (max-width: 650px) {
   /* home page */
-  header{
+  header {
     margin-bottom: 80px;
   }
-  header h1{
+  header h1 {
     font-size: 2rem;
   }
 
   #homeMain_introDetails {
     display: none;
   }
-  
+
   .homeMain_exerciseExplanations-odd,
-  .homeMain_exerciseExplanations-even{
+  .homeMain_exerciseExplanations-even {
     display: flex;
   }
 
-  .homeMain_exerciseExplanations-even{
-  flex-direction: column-reverse;
+  .homeMain_exerciseExplanations-even {
+    flex-direction: column-reverse;
   }
 
-  .homeMain_exerciseExplanations-odd{
+  .homeMain_exerciseExplanations-odd {
     flex-direction: column;
   }
 
@@ -445,16 +395,16 @@ Results */
     text-align: center;
   }
 
-  footer{
+  footer {
     justify-content: center;
   }
 
-  #footer_copyRightText p:nth-of-type(2){
+  #footer_copyRightText p:nth-of-type(2) {
     display: none;
   }
 
   /* child page */
-  #childMain_introDetails{
+  #childMain_introDetails {
     display: none;
   }
 }
