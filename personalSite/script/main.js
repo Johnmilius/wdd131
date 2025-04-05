@@ -30,7 +30,7 @@ function displayResults(personObj){
     let html = resultsTemplete(personObj);
     let resultsSection = document.querySelector('#childMain_results_container');
 
-    resultsSection.insertAdjacentHTML('beforeend', html)
+    resultsSection.innerHTML = html;
 }
 
 function resultsTemplete(personObj){
